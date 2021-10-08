@@ -1,3 +1,6 @@
+from human import Human
+from ai import AI
+
 class Player:
 
     def __init__(self):
