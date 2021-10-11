@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8a669ac17b55fcb0877cb5900ff36f08fb4c7340
 from player import Player
 from human import Human
 from AI import AI
@@ -17,8 +20,15 @@ class Gameboard:
         self.welcome_message()
         self.rules_explained()
         self.game_mode()
+<<<<<<< HEAD
         
 
+=======
+        self.player_picks()
+        self.rule_one()
+        self.rule_two()
+        
+>>>>>>> 8a669ac17b55fcb0877cb5900ff36f08fb4c7340
         # Intro phase
     def welcome_message(self): 
         print("Welcome to Rock, Paper, Scissors, Lizard, Spock!")
@@ -28,7 +38,11 @@ class Gameboard:
         # explain rules
     def game_mode(self):
         input("Enter 1 to play against another person, or enter 2 to challenge the computer!")
+<<<<<<< HEAD
         if int(input ==()):
+=======
+        if int(input == ()):
+>>>>>>> 8a669ac17b55fcb0877cb5900ff36f08fb4c7340
             self.player_two = Human()
         elif int(input == ()):
             self.player_two = AI()
@@ -37,15 +51,14 @@ class Gameboard:
         # choose game type - Assign a type to Player 2
 
         # Game round phase - Loop
-def player_picks(self):
-    player_one_pick = Player.choose_gesture(self)
-    player_two_pick = AI.ai_turn(self)
-        
+    def player_picks(self):
         # P1 picks
-    
+        self.player_one = Player.choose_gesture(self)
         # P2 picks
+        self.player_two = AI.choose_gesture(self)
         
         # Determine winner of round
+<<<<<<< HEAD
 
         # Endgame
         # Display winner of game
@@ -53,6 +66,9 @@ def player_picks(self):
 
 
 def rule_one(self):
+=======
+    def rule_one(self):
+>>>>>>> 8a669ac17b55fcb0877cb5900ff36f08fb4c7340
         player_point = 0
         for gesture in self.gesture:
             if [0] < [1]:
@@ -98,6 +114,7 @@ def rule_one(self):
             else:
                 gesture == gesture
                 print("There has been a tie, try again.")
+<<<<<<< HEAD
 
 def winner_of_game(self):    
     for player_point in rule_one():
@@ -109,3 +126,16 @@ def winner_of_game(self):
             print[f"Congratulations Player {self.winner_of_game}, you have won the game"]
 
      
+=======
+        #Determine the winner of the game
+    def rule_two(self):    
+        for player_point in self.player_point:
+            while player_point <= 1:
+                print("Try again")
+            else: 
+                player_point == 2
+                print[f"Congratulations Player {self.winner_of_game}, you have won the game"]
+
+        #Endgame
+    
+>>>>>>> 8a669ac17b55fcb0877cb5900ff36f08fb4c7340
