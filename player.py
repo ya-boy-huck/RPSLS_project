@@ -1,14 +1,11 @@
-# from human import Human
-# from ai import AI
-
 class Player:
 
-    def __init__(self):
+    def __init__(self): 
         self.gesture = ["Rock", "Scissors", "Paper" , "Lizard", "Spock"]
-        self.rules = ()
+        self.player_point = 0
         
-    
-    def gesture(self):
+
+    def choose_gesture(self):
      while True:
         self.gesture = input("Enter 0 for Rock, 1 for Scissors, 2 for Paper, 3 for Lizard, 4 for Spock")
         if self.gesture == "0":
@@ -24,6 +21,7 @@ class Player:
         else:
             break
 
+<<<<<<< HEAD
     def winner_of_round(self):
         
         if self.human_player_point == +1:
@@ -83,3 +81,8 @@ class Player:
            else:
                gesture == gesture
                print("There has been a tie, try again.")
+=======
+         
+    
+        
+>>>>>>> bc6cbc2025f0b3ad5ce06c4ca72d009923f5b6af
