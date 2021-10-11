@@ -9,6 +9,7 @@ class Player:
         
     
     def gesture(self):
+<<<<<<< HEAD
         self.gesture = input("Enter 0 for Rock, 1 for Scissors, 2 for Paper, 3 for Lizard, 4 for Spock")
         if self.gesture == "0":
             print(f"You have chosen {self.gesture[0]}")
@@ -18,6 +19,21 @@ class Player:
             print(f"You have chosen {self.gesture[2]}")
         if self.gesture == "3":        
             print(f"You have chosen {self.gesture[3]}")   
+=======
+        while True:
+            self.gesture = input("Enter 0 for Rock, 1 for Scissors, 2 for Paper, 3 for Lizard, 4 for Spock")
+           
+            if self.gesture.lower() not in ('0','1', '2', '3', '4'):
+                     print("Please try again and Enter 0 for Rock, 1 for Scissors, 2 for Paper, 3 for Lizard, 4 for Spock")
+            else:
+                break
+
+    def winner_of_round(self):
+        if self.human_player_point == +1:
+            self.human_player_point.name = winner_of_round
+        elif self.ai_player_point == +1:
+            self.ai_player_point.name = winner_of_round    
+>>>>>>> 0a52d52aa6a4201e97fdfbd9408b703497d85471
 
         
     def rules(self):
@@ -60,6 +76,9 @@ class Player:
                return player_point
            else:
                gesture == gesture
+<<<<<<< HEAD
+        pass
+=======
                print("There has been a tie, try again.")
 
 
@@ -67,3 +86,4 @@ class Player:
 
 
 
+>>>>>>> b7facfc27c360ce64b7ab71ee48b47805cf5ed12
