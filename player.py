@@ -63,11 +63,20 @@ class Player:
                player_point += 1
                print[f"Player {self.winner_of_round} has won the round"]
                return player_point
+           elif [3] < [2]: 
+               player_point += 1
+               print[f"Player {self.winner_of_round} has won the round"]
+               return player_point
+           elif [2] < [4]: 
+               player_point += 1
+               print[f"Player {self.winner_of_round} has won the round"]
+               return player_point
+           elif [4] < [0]:
+               player_point += 1
+               print[f"Player {self.winner_of_round} has won the round"]
+               return player_point  
            else:
                gesture == gesture
-<<<<<<< HEAD
-        pass
-=======
                print("There has been a tie, try again.")
 
 
@@ -75,4 +84,3 @@ class Player:
 
 
 
->>>>>>> b7facfc27c360ce64b7ab71ee48b47805cf5ed12
