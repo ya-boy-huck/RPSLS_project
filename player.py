@@ -2,7 +2,7 @@ class Player:
 
     def __init__(self): 
         self.gesture = ["Rock", "Scissors", "Paper" , "Lizard", "Spock"]
-        self.player_point = 0
+        
         
 
     def choose_gesture(self):
