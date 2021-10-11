@@ -1,5 +1,4 @@
 
-from _typeshed import Self
 from player import Player
 from human import Human
 from AI import AI
@@ -7,15 +6,19 @@ from AI import AI
 class Gameboard:        
 
     def __init__(self):
-        self.winner_of_game = ()
+      
         self.player_one = Human
         self.player_two = None
         self.player_point = 0
-        
+        self.gesture = ()
+        self.winner_of_game = ()
+
     def run_game(self):
         self.welcome_message()
         self.rules_explained()
-    
+        self.game_mode()
+        
+
         # Intro phase
     def welcome_message(self): 
         print("Welcome to Rock, Paper, Scissors, Lizard, Spock!")
@@ -25,9 +28,9 @@ class Gameboard:
         # explain rules
     def game_mode(self):
         input("Enter 1 to play against another person, or enter 2 to challenge the computer!")
-        if input == "1":
+        if int(input ==()):
             self.player_two = Human()
-        elif input == "2":
+        elif int(input == ()):
             self.player_two = AI()
         else:
             print("please enter the number 1 or 2 to continue")
@@ -47,9 +50,9 @@ def player_picks(self):
         # Endgame
         # Display winner of game
 
-        pass
 
-    def rule_one(self):
+
+def rule_one(self):
         player_point = 0
         for gesture in self.gesture:
             if [0] < [1]:
@@ -96,12 +99,13 @@ def player_picks(self):
                 gesture == gesture
                 print("There has been a tie, try again.")
 
-    def rule_two(self):    
-        for player_point in self.player_point:
-            while player_point <= 1:
-                print("Try again")
-            else: 
-                player_point == 2
-                print[f"Congratulations Player {self.winner_of_game}, you have won the game"]
+def winner_of_game(self):    
+    for player_point in rule_one():
+        while player_point <= 1:
+            print("Try again")
+        else: 
+            player_point == 2
+            self.winner_of_game = self.player_point == 2
+            print[f"Congratulations Player {self.winner_of_game}, you have won the game"]
 
-    
+     
