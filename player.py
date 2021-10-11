@@ -19,12 +19,13 @@ class Player:
             print(f"You have chosen {self.gesture[2]}")
         if self.gesture == "3":        
             print(f"You have chosen {self.gesture[3]}")
-        if self.gesture.lower() not in ('0','1', '2', '3', '4'):
+        if self.gesture() not in ('0','1', '2', '3', '4'):
                      print("Please try again and Enter 0 for Rock, 1 for Scissors, 2 for Paper, 3 for Lizard, 4 for Spock")
         else:
             break
 
     def winner_of_round(self):
+        
         if self.human_player_point == +1:
             self.human_player_point.name = winner_of_round
         elif self.ai_player_point == +1:
@@ -82,9 +83,3 @@ class Player:
            else:
                gesture == gesture
                print("There has been a tie, try again.")
-
-
-
-
-
-
