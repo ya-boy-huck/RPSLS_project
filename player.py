@@ -22,13 +22,5 @@ class Player:
             break
 
          
-    def point_awarded(self):
-        player_point = 0
-        for player_point in self.player_point:
-            while player_point <= 1:
-                print("Try again")
-            else: 
-                player_point == 2
-                print[f"Congratulations Player {self.winner_of_game}, you have won the game"]
-  
+    
         
