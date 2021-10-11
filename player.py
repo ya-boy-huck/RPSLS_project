@@ -1,11 +1,10 @@
-from human import Human
-from ai import AI
+# from human import Human
+# from ai import AI
 
 class Player:
 
     def __init__(self):
         self.gesture = ["Rock", "Scissors", "Paper" , "Lizard", "Spock"]
-        self.winner_of_round = ()
         self.rules = ()
         
     
@@ -18,20 +17,13 @@ class Player:
         if self.gesture == "2": 
             print(f"You have chosen {self.gesture[2]}")
         if self.gesture == "3":        
-            print(f"You have chosen {self.gesture[3]}")
-
-    def winner_of_round(self):
-        if self.human_player_point == +1:
-            self.human_player_point.name = winner_of_round
-        elif self.ai_player_point == +1:
-            self.ai_player_point.name = winner_of_round    
+            print(f"You have chosen {self.gesture[3]}")   
 
         
-    
     def rules(self):
         player_point = 0
         for player_point in self.player_point:
-            while player_point <=1:
+            while player_point <= 1:
                 print("Try again")
             else: 
                 player_point == 2
