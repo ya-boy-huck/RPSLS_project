@@ -21,6 +21,7 @@ class Gameboard:
         self.rule_two()
         
     # Intro phase
+        # Intro phase
     def welcome_message(self): 
         print("Welcome to Rock, Paper, Scissors, Lizard, Spock!")
         # welcome message
@@ -40,7 +41,6 @@ class Gameboard:
         else:
             return
         
-
         # Game round phase - Loop
     def player_picks(self):
         # P1 picks
@@ -49,7 +49,6 @@ class Gameboard:
         self.player_two.choose_gesture()
         
         # Determine winner of round
-
     def rule_one(self):
         player_point = 0
         for gesture_choice in self.gesture:
@@ -119,4 +118,3 @@ def winner_of_game(self):
 
         #Endgame
     
-
