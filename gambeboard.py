@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 8a669ac17b55fcb0877cb5900ff36f08fb4c7340
 from player import Player
 from human import Human
 from AI import AI
@@ -10,68 +6,51 @@ class Gameboard:
 
     def __init__(self):
       
-        self.player_one = Human
+        self.player_one = Human()
         self.player_two = None
         self.player_point = 0
-        self.gesture = ()
-        self.winner_of_game = ()
-
+        self.gesture = None
+        self.winner_of_game = None
+        
     def run_game(self):
         self.welcome_message()
         self.rules_explained()
         self.game_mode()
-<<<<<<< HEAD
-        
-
-=======
         self.player_picks()
         self.rule_one()
         self.rule_two()
         
->>>>>>> 8a669ac17b55fcb0877cb5900ff36f08fb4c7340
-        # Intro phase
+    # Intro phase
     def welcome_message(self): 
         print("Welcome to Rock, Paper, Scissors, Lizard, Spock!")
         # welcome message
     def rules_explained(self):
             print("Rock, Paper, Scissors, Lizard, Spock is the game of rock, paper, scissors woth a twist! Choose wether you would like to play with another person or against the computer. The first player to win 2 out of the 3 rounds will be crowned the winner! Here is some instructions for you to follow. Rock crushes Scissors, Scissors cuts Paper, Paper covers Rock, Rock crushes Lizard, Lizard poisons Spock, Spock smashes Scissors, Scissors decapitates Lizard, Lizard eats Paper, Paper disproves Spock, Spock vaporizes Rock. Now that has been explained, Enjoy the game!")
-        # explain rules
+        # explain rules    
+
+    # choose game type - Assign a type to Player 2
     def game_mode(self):
-<<<<<<< HEAD
-        input("Enter 1 to play against another person, or enter 2 to challenge the computer!: ")
-=======
-        input("Enter 1 to play against another person, or enter 2 to challenge the computer!")
-<<<<<<< HEAD
-        if int(input ==()):
-=======
->>>>>>> 74f4a3b2603702f5248a54459eb1c8c5ed36fb28
-        if int(input == ()):
->>>>>>> 8a669ac17b55fcb0877cb5900ff36f08fb4c7340
-            self.player_two = Human()
-        if int(input == ()):
-            self.player_two = AI()
-             
-        # choose game type - Assign a type to Player 2
+        player_response = int(input("Enter 1 to play against another person, or enter 2 to challenge the computer!: "))
+        if int(player_response) == 1:
+            player_response = self.player_two = Human()
+            print(f"You have chosen to play against another Player!")
+        elif int(player_response) == 2:
+            player_response = self.player_two = AI()
+            print(f"You have chosen to play against the Computer!")
+        else:
+            return
+        
 
         # Game round phase - Loop
     def player_picks(self):
         # P1 picks
-        self.player_one = Human.choose_gesture(self)
+        self.player_one.choose_gesture()
         # P2 picks
-        self.player_two = AI.choose_gesture(self)
+        self.player_two.choose_gesture()
         
         # Determine winner of round
-<<<<<<< HEAD
 
-        # Endgame
-        # Display winner of game
-
-
-
-def rule_one(self):
-=======
     def rule_one(self):
->>>>>>> 8a669ac17b55fcb0877cb5900ff36f08fb4c7340
         player_point = 0
         for gesture_choice in self.gesture:
             if [0] < [1]:
@@ -117,10 +96,10 @@ def rule_one(self):
             else:
                 gesture_choice == gesture_choice
                 print("There has been a tie, try again.")
-<<<<<<< HEAD
+
 
 def winner_of_game(self):    
-    for player_point in rule_one():
+    for player_point in self.rule_one():
         while player_point <= 1:
             print("Try again")
         else: 
@@ -128,8 +107,7 @@ def winner_of_game(self):
             self.winner_of_game = self.player_point == 2
             print[f"Congratulations Player {self.winner_of_game}, you have won the game"]
 
-     
-=======
+
         #Determine the winner of the game
     def rule_two(self):    
         for player_point in self.player_point:
@@ -141,4 +119,4 @@ def winner_of_game(self):
 
         #Endgame
     
->>>>>>> 8a669ac17b55fcb0877cb5900ff36f08fb4c7340
+

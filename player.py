@@ -18,7 +18,7 @@ class Player:
             print(f"You have chosen {self.gesture[3]}")
         if self.gesture_choice == "4":        
             print(f"You have chosen {self.gesture[4]}")
-        if self.gesture_choice() not in ('0','1', '2', '3', '4'):
+        if self.gesture_choice not in ['0','1', '2', '3', '4']:
                      print("Please try again and Enter 0 for Rock, 1 for Scissors, 2 for Paper, 3 for Lizard, 4 for Spock: ")
         else:
             break
