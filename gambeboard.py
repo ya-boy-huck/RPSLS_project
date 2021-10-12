@@ -52,6 +52,7 @@ class Gameboard:
         
         # Determine winner of round
     def rule_one(self):
+<<<<<<< HEAD
         player_point = 0
         self.winner_of_round = 1
         if self.player_one == player_point +1:
@@ -62,44 +63,56 @@ class Gameboard:
                 player_point += 1
                 print[f"Player {self.winner_of_round} has won the round"]
                 return player_point
+=======
+    
+        if self.player_one.choose_gesture == 0  and self.player_two.choose_gesture == 1:
+            print("Player one wins") 
+
+>>>>>>> ead110490cc77de332069743872cc04096450162
         elif [1] < [2]:
                 player_point += 1
-                print[f"Player {self.winner_of_round} has won the round"]
+                print(f"Player {self.winner_of_round} has won the round")
                 return player_point
         elif [2] < [0]: 
                 player_point += 1
-                print[f"Player {self.winner_of_round} has won the round"]
+                print(f"Player {self.winner_of_round} has won the round")
                 return player_point
         elif [0] < [3]: 
                 player_point += 1
-                print[f"Player {self.winner_of_round} has won the round"]
+                print(f"Player {self.winner_of_round} has won the round")
                 return player_point
         elif [3] < [4]: 
                 player_point += 1
-                print[f"Player {self.winner_of_round} has won the round"]
+                print(f"Player {self.winner_of_round} has won the round")
                 return player_point
         elif [4] < [1]: 
                 player_point += 1
-                print[f"Player {self.winner_of_round} has won the round"]
+                print(f"Player {self.winner_of_round} has won the round")
                 return player_point
         elif [1] < [3]:
                 player_point += 1
-                print[f"Player {self.winner_of_round} has won the round"]
+                print(f"Player {self.winner_of_round} has won the round")
                 return player_point
         elif [3] < [2]: 
                 player_point += 1
-                print[f"Player {self.winner_of_round} has won the round"]
+                print(f"Player {self.winner_of_round} has won the round")
                 return player_point
         elif [2] < [4]: 
                 player_point += 1
-                print[f"Player {self.winner_of_round} has won the round"]
+                print(f"Player {self.winner_of_round} has won the round")
                 return player_point
         elif [4] < [0]:
                 player_point += 1
-                print[f"Player {self.winner_of_round} has won the round"]
+                print(f"Player {self.winner_of_round} has won the round")
                 return player_point  
         else:
                 print("There has been a tie, try again.")
+
+        if self.player_one == player_point +1:
+            self.player_one = self.winner_of_round
+        else:
+            self.player_two = self.winner_of_round
+            self.player_two == player_point +1
 
 
         #Determine the winner of the game
