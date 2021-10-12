@@ -1,6 +1,7 @@
-from player import Player
+
 from human import Human
 from AI import AI
+
 
 class Gameboard:        
 
@@ -51,7 +52,7 @@ class Gameboard:
         # Determine winner of round
     def rule_one(self):
         player_point = 0
-        for gesture_choice in self.gesture:
+        for gesture in self.gesture:
             if [0] < [1]:
                 player_point += 1
                 print[f"Player {self.winner_of_round} has won the round"]
@@ -93,7 +94,7 @@ class Gameboard:
                 print[f"Player {self.winner_of_round} has won the round"]
                 return player_point  
             else:
-                gesture_choice == gesture_choice
+                gesture == gesture
                 print("There has been a tie, try again.")
 
 
