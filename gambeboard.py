@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 8a669ac17b55fcb0877cb5900ff36f08fb4c7340
 from player import Player
 from human import Human
 from AI import AI
@@ -20,31 +16,22 @@ class Gameboard:
         self.welcome_message()
         self.rules_explained()
         self.game_mode()
-<<<<<<< HEAD
-        
-
-=======
         self.player_picks()
         self.rule_one()
         self.rule_two()
         
->>>>>>> 8a669ac17b55fcb0877cb5900ff36f08fb4c7340
         # Intro phase
     def welcome_message(self): 
         print("Welcome to Rock, Paper, Scissors, Lizard, Spock!")
         # welcome message
     def rules_explained(self):
-            print("Rock, Paper, Scissors, Lizard, Spock is the game of rock, paper, scissors woth a twist! Choose wether you would like to play with another person or against the computer. The first player to win 2 out of the 3 rounds will be crowned the winner! Here is some instructions for you to follow. Rock crushes Scissors, Scissors cuts Paper, Paper covers Rock, Rock crushes Lizard, Lizard poisons Spock, Spock smashes Scissors, Scissors decapitates Lizard, Lizard eats Paper, Paper disproves Spock, Spock vaporizes Rock. Now that has been explained, Enjoy the game!")
+        print("Rock, Paper, Scissors, Lizard, Spock is the game of rock, paper, scissors woth a twist! Choose wether you would like to play with another person or against the computer. The first player to win 2 out of the 3 rounds will be crowned the winner! Here is some instructions for you to follow. Rock crushes Scissors, Scissors cuts Paper, Paper covers Rock, Rock crushes Lizard, Lizard poisons Spock, Spock smashes Scissors, Scissors decapitates Lizard, Lizard eats Paper, Paper disproves Spock, Spock vaporizes Rock. Now that has been explained, Enjoy the game!")
         # explain rules
     def game_mode(self):
         input("Enter 1 to play against another person, or enter 2 to challenge the computer!")
-<<<<<<< HEAD
-        if int(input ==()):
-=======
-        if int(input == ()):
->>>>>>> 8a669ac17b55fcb0877cb5900ff36f08fb4c7340
+        if int(input == "1"):
             self.player_two = Human()
-        elif int(input == ()):
+        elif int(input == "2"):
             self.player_two = AI()
         else:
             print("please enter the number 1 or 2 to continue")
@@ -58,17 +45,7 @@ class Gameboard:
         self.player_two = AI.choose_gesture(self)
         
         # Determine winner of round
-<<<<<<< HEAD
-
-        # Endgame
-        # Display winner of game
-
-
-
-def rule_one(self):
-=======
     def rule_one(self):
->>>>>>> 8a669ac17b55fcb0877cb5900ff36f08fb4c7340
         player_point = 0
         for gesture in self.gesture:
             if [0] < [1]:
@@ -114,19 +91,6 @@ def rule_one(self):
             else:
                 gesture == gesture
                 print("There has been a tie, try again.")
-<<<<<<< HEAD
-
-def winner_of_game(self):    
-    for player_point in rule_one():
-        while player_point <= 1:
-            print("Try again")
-        else: 
-            player_point == 2
-            self.winner_of_game = self.player_point == 2
-            print[f"Congratulations Player {self.winner_of_game}, you have won the game"]
-
-     
-=======
         #Determine the winner of the game
     def rule_two(self):    
         for player_point in self.player_point:
@@ -138,4 +102,3 @@ def winner_of_game(self):
 
         #Endgame
     
->>>>>>> 8a669ac17b55fcb0877cb5900ff36f08fb4c7340
